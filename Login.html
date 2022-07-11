@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./Login.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <!--HTML에 작성한 뒤, element를 가져와 js에서 움직인다-->
+    <div id="login-form"><!--묶어서 구분하기 위해 사용-->
+    <!--id: 재사용 불가, class: 재사용 가능-->
+        <input type="text" placeholder="What is your name?"/>
+    <!--
+        필수입력 항목으로 최대 문자 길이가 15인 항목인 input
+    -> <input required maxlength="15" type="text" placeholder="What is your name?"/>
+    그러나 이 상태에서 입력을 하면 아무 문제없이 출력되어 유효성이 제대로 검사되지 않는다.
+    만약 이 상태에서 유효성을 검사하고 싶다면 <form>태그를 작동하여 만들어야 한다
+    -->
+        <button>Log In</button>
+    </div>  
+    4.3~부터
+    <hr>
+    <form id="login" class="hidden">
+        <input required maxlength="15" type="text" placeholder="What is your name?"/>
+        <!--이 경우, 웹브라우저가 입력하도록 돕는다-->
+        <input type="submit" value="Log in2"/>
+        <!--submit을 할 때마다 새로고침을 하면서 submit한다!-->
+    </form>
+    <a href="http://nomadcoders.co">Go to course</a>
+    <h1 id="greeting" class="hidden"></h1>
+    <!--<script src="./Login.js"></script>-->
+    <!--<script src="./Login2.js"></script>-->
+    <script src="./Login3.js"></script>
+</body>
+</html>

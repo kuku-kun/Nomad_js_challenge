@@ -49,4 +49,3 @@ window.addEventListener("resize", handleWindowResize); // body의 사이즈 변�
 window.addEventListener("copy", handleWindowCopy); // 복사시 발동
 window.addEventListener("offline", handleWindowOffline); // wifi 끊어지는 경우 발동
 
-/
