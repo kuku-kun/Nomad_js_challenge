@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./QUIZ.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Random Number Game</h1>
+    <form class="chose">
+        <h3>Generate a number between 0 and </h3>
+        <input type="text" required/>
+    </form>
+    <form class="play">
+        <p>Guess the number:</p>
+        <input type="text" required class="guess"/>
+        <input type="submit" value="Play!"/>
+    </form>
+    <div id="see" class="hidden">
+        <p id="chosen">a</p>
+        <p id="m_chosen">a</p>
+        <br>
+        <p id="result"></p>
+    </div>
+    
+    <script src="./QUIZ.js"></script>
+</body>
+</html>
